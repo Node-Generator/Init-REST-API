@@ -1,5 +1,6 @@
 import express from 'express';
-import customError, { BAD_REQUEST, errorHandler } from '../utils/customError';
+import customError, { BAD_REQUEST } from '../utils/customError';
+import { errorHandler } from '../middlewares/errorHandler';
 
 const routes = express();
 routes.use(express.json());
