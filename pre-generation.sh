@@ -2,7 +2,16 @@
 
 npm init --yes
 npm i express
-npm i eslint eslint-config-airbnb-base eslint-plugin-import dotenv mocha supertest -D
+
+npm i \
+eslint \
+eslint-config-airbnb-base \
+eslint-plugin-import \
+dotenv \
+mocha \
+supertest \
+nodemon \
+-D
 
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
