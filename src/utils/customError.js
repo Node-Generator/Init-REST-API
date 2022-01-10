@@ -1,12 +1,14 @@
-export default (errorString, code = 500) => {
-  const error = new Error(errorString);
-  error.code = code;
+export const BAD_REQUEST = { status: 400, message: 'Bad Request' };
+
+export default ({ status, message }) => {
+  const error = new Error(message);
+  error.status = status;
   throw error;
 };
 
 export const errorHandler = (error, req, res, next) => {
   if (error) {
-    return res.status(error.code).json({
+    return res.status(error.status).json({
       message: error.message,
     });
   }
