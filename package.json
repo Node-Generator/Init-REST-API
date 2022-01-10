@@ -1,0 +1,32 @@
+{
+  "name": "init-rest-api",
+  "version": "1.0.0",
+  "description": "``` npm i npm run dev ``` ## Prod Set the environment variable from `.env` example. ``` npm i npm start ```",
+  "main": "initAPI.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
+    "dev": "node -r dotenv/config --experimental-specifier-resolution=node src/index.js",
+    "start": "node --experimental-specifier-resolution=node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Node-Generator/Init-REST-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Node-Generator/Init-REST-API/issues"
+  },
+  "homepage": "https://github.com/Node-Generator/Init-REST-API#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
