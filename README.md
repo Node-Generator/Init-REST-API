@@ -1,12 +1,5 @@
 # Init REST API
-## Dev
-```
-npm i
-npm run dev
-```
-## Prod
-Set the environment variable from `.env` example.
-```
-npm i
-npm start
-```
+
+This repository is not intended to be runned by itself, it contains the required files to generate a REST API.
+
+To use this code, report to the [Node-Generator](https://github.com/Node-Generator/Node-Generator).
